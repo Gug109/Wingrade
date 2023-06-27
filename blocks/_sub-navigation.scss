@@ -1,0 +1,55 @@
+.main-nav {
+    background-color: var(--black);
+    position: fixed;
+    top: 0;
+    height: 2310px;
+    z-index: 3;
+    overflow: hidden;
+    transition: width .3s ease;
+    padding: 13px 20px;
+    cursor: pointer;
+    box-shadow: 4px 7px 10px rgba(0, 0, 0, .4);
+
+    &:hover {
+        width: 200px;
+    }
+
+    &:hover + &_text{
+        visibility: visible;
+    }
+
+    hr {
+        margin-bottom: 30px;
+    }
+
+    &_fire-img {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 500px) {
+        width: 38px;
+    }
+
+    &_arrow-btn {
+        border-color: var(--brand-color);
+        border-radius: 50%;
+        background-color: var(--black);
+    }
+
+    &_text {
+        font-size: 16px; 
+        color: var(--brand-color);
+        // visibility: hidden;
+    }
+
+    &_img {
+        margin-right: 30px;
+    }
+
+    &_list {
+        margin-bottom: 50px;
+        padding-left: 4px;
+        display: flex;
+        align-items: center;
+    }
+}

@@ -1,0 +1,70 @@
+body {
+    background-color: var(--warm-black);
+}
+
+.main-section {
+    margin-left: 130px;
+
+    &_bonus-cart {
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    &_bonus-card-img {
+        opacity: 60%;
+    }
+
+    &_bonus-list {
+        position: relative;
+    }
+
+    &_bonus-content {
+        position: absolute;
+        justify-content: center;
+        top: 36px;
+        left: 36px;
+    }
+
+    &_join-btn {
+        background-color: var(--brand-color);
+        border: none;
+        border-radius: 16px;
+        padding: 10px 30px;
+        display: block;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 36px;
+        margin-top: 40px;
+        margin-left: 37%;
+    }
+
+    &_important-text {
+        display: block;
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 48px;
+        color: var(--white);
+    }
+
+    &_bonus-title {
+        font-weight: 400;
+        text-align: center;
+        font-size: 28px;
+        line-height: 72px;
+        color: var(--white);
+    }
+
+    &_bonus-list {
+        margin-right: 32px;
+    }
+
+    &_thick-text {
+        font-weight: 800;
+        size: 36px;
+        line-height: 72px;
+        color: var(--white);
+    }
+}

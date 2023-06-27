@@ -1,0 +1,76 @@
+.main-header {
+    background-color: var(--black);
+    padding-top: 8px;
+    width: 100%;
+    padding-bottom: 8px;
+
+    &_search-icon {
+        position: absolute;
+        padding: 12px;
+    }
+
+    &_input {
+        width: 360px;
+        height: 40px;
+        left: 0;
+        border-radius: 8px;
+        background-color: var(--tab-background);
+        border: none;
+        margin-left: 110px;
+        margin-top: 2px;
+        border-color: var(--tab-background);
+        position: relative;
+    }
+
+    &_block {
+        margin-left: 45%;
+        align-items: center;
+    }
+
+    &_input::placeholder {
+        padding-left: 20px;
+        color: var(--white);
+    }
+
+    hr {
+        height: 2px;
+        background-color: #504c4c;
+        border: none;
+    }
+
+    &_login-btn {
+        padding: 8px 24px;
+        border-radius: 16px;
+        background-color: var(--black);
+        border-color: var(--white);
+        color: var(--white);
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    &_sign-btn {
+        cursor: pointer;
+        padding: 10px 24px;
+        border-radius: 16px;
+        background-color: var(--brand-color);
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-right: 10px;
+    }
+
+    &_list {
+        display: flex;
+    }
+
+    &_language-btn {
+        background-color: var(--black);
+        border-radius: 50%;
+        border: none;
+        align-items: center;
+    }
+
+}

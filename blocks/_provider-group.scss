@@ -1,0 +1,35 @@
+.main-providers {
+    display: flex;
+    width: 94%;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: var(--black);
+
+    &_provider {
+        background-color: var(--tab-background);
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 16px;
+        border: none;
+    }
+
+    &_first-provider {
+        padding: 16px 26px;
+        border-radius: 16px;
+        background-color: var(--tab-background);
+        margin-right: 22px;
+        border: none;
+    }
+
+    &_first-provider:hover {
+        background-color: #121212;
+    }
+
+    &_provider-helper {
+        margin-right: 22px;
+    }
+
+    &_provider:hover {
+        background-color: #121212;
+    }
+}
