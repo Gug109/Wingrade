@@ -69,6 +69,14 @@
   background-color: var(--black);
   border: none;
 }
+.main-header_burger-btn-fire-img-block {
+  display: flex;
+}
+.main-header_fire-img {
+  margin-left: 6px;
+  width: 45px;
+  height: 30px;
+}
 @media screen and (max-width: 420px) {
   .main-header_input {
     display: none;
@@ -107,6 +115,12 @@ body {
   display: flex;
   margin-top: 30px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 420px) {
+  .main-section {
+    position: absolute;
+    justify-content: center;
+  }
 }
 .main-section_bonus-card-img {
   opacity: 60%;
@@ -288,6 +302,7 @@ body {
 }
 .main-nav_burger-ul {
   display: none;
+  height: 100%;
 }
 .main-nav_burger-list {
   background-color: #222424;

@@ -3,16 +3,20 @@ let providerButtons = document.querySelectorAll('.main-providers_provider')
 let burgerBtn = document.querySelector(".main-header_opened-btn");
 let burgerBlock = document.querySelector(".main-nav_burger-ul");
 let closeBtn = document.querySelector(".main-nav_close-btn");
+let fireImg = document.querySelector(".main-header_fire-img");
+ 
 
 closeBtn.addEventListener('click', () => {
     burgerBlock.style.display = "none";
     burgerBtn.style.display = "block";
+    fireImg.style.display = "block";
 })
 
 burgerBtn.addEventListener('click', () => {
     burgerBlock.style.display = "block";
     burgerBtn.style.display = "none";
     burgerBlock.style.zIndex = "10003";
+    fireImg.style.display = "none";
 
 } ) 
 

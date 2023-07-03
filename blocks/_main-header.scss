@@ -75,6 +75,16 @@
         border: none;
     }
 
+    &_burger-btn-fire-img-block {
+        display: flex;
+    }
+
+    &_fire-img {
+        margin-left: 6px;
+        width: 45px;
+        height: 30px;
+    }
+
     @media screen and (max-width: 420px) {
         &_input {
             display: none;
