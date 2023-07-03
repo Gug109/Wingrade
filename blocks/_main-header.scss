@@ -71,9 +71,10 @@
 
     &_opened-btn {
         display: none;
-        margin-bottom: 20px;
+        background-color: var(--black);
+        border: none;
     }
-    
+
     @media screen and (max-width: 420px) {
         &_opened-btn {
             display: block;
@@ -81,12 +82,18 @@
     }
 
     &_burger-btn-block {
-        display: flex; 
+        display: flex;
+    }
+
+    &_close-img {
+        width: 100%;
     }
 
     &_close-btn {
         position: absolute;
-        right: 0; 
+        right: 0;
+        background-color: var(--black);
+        border: none;
     }
 
 }

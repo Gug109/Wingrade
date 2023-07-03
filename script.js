@@ -10,6 +10,7 @@ closeBtn.addEventListener('click', () => {
 
 burgerBtn.addEventListener('click', () => {
     burgerBlock.style.display = "block";
+    burgerBtn.style.marginBottom = "30px";
 } ) 
 
 
