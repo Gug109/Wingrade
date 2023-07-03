@@ -6,12 +6,12 @@ let closeBtn = document.querySelector(".main-nav_close-btn");
 
 closeBtn.addEventListener('click', () => {
     burgerBlock.style.display = "none";
-    // burgerBtn.style.display = "block";
+    burgerBtn.style.display = "block";
 })
 
 burgerBtn.addEventListener('click', () => {
     burgerBlock.style.display = "block";
-    // burgerBtn.style.display = "none";
+    burgerBtn.style.display = "none";
     burgerBlock.style.zIndex = "10003";
 
 } ) 
