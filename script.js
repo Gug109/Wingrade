@@ -1,7 +1,12 @@
 let categoryButtons = document.querySelectorAll('.main-categories_category')
 let providerButtons = document.querySelectorAll('.main-providers_provider')
+let burgerBtn = document.querySelector(".opened-btn");
+let burgerBlock = document.querySelector(".main-nav_burger-ul");
 
-
+burgerBtn.addEventListener('click', () => {
+    console.log("hello");
+    burgerBlock.style.display = "block";
+} ) 
 
 function clearCategoryButtonStyles() {
     categoryButtons.forEach(button => {
@@ -38,5 +43,7 @@ providerButtons.forEach(button => {
         button.style.boxShadow = '0px 5px 40px 0px rgba(252, 248, 184, 0.42)';
     });
 });
+
+
 
 

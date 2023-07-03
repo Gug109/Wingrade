@@ -1,20 +1,29 @@
 .main-nav {
-    background-color: var(--black);
-    position: fixed;
-    top: 0;
-    height: 100%;
-    z-index: 3;
-    overflow: hidden;
-    transition: width .3s ease;
-    padding: 13px 20px;
-    cursor: pointer;
-    box-shadow: 4px 7px 10px rgba(0, 0, 0, .4);
+    &_main-ul {
+        background-color: var(--black);
+        position: fixed;
+        top: 0;
+        height: 100%;
+        z-index: 3;
+        overflow: hidden;
+        transition: width .3s ease;
+        padding: 13px 20px;
+        cursor: pointer;
+        box-shadow: 4px 7px 10px rgba(0, 0, 0, .4);
+    }
 
-    &:hover {
+    &_main-ul:hover {
         width: 200px;
     }
 
-    &:hover+&_text {
+    @media screen and (max-width: 420px) {
+        &_main-ul {
+            display: none;
+        }
+
+    }
+
+    &_main-ul:hover+&_text {
         visibility: visible;
     }
 
@@ -40,7 +49,7 @@
 
     @media screen and (max-width: 420px) {
         &_burger-btn {
-        visibility: visible;
+            visibility: visible;
         }
 
         &_ul {
@@ -65,6 +74,29 @@
 
     &_text:hover {
         color: rgb(255, 81, 0);
+    }
+
+    &_burger-ul {
+        display: none;
+    }
+
+    &_burger-list {
+        background-color: #222424;
+        padding: 14px;
+        border-radius: 16px;
+        width: 100%;
+        padding-left: 4px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &_opened-btn {
+        display: none;
+    }
+
+    &_burger-item {
+        margin-left: 20px;
     }
 
     &_img {
