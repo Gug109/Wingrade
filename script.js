@@ -2,15 +2,18 @@ let categoryButtons = document.querySelectorAll('.main-categories_category')
 let providerButtons = document.querySelectorAll('.main-providers_provider')
 let burgerBtn = document.querySelector(".main-header_opened-btn");
 let burgerBlock = document.querySelector(".main-nav_burger-ul");
-let closeBtn = document.querySelector(".main-header_close-btn");
+let closeBtn = document.querySelector(".main-nav_close-btn");
 
 closeBtn.addEventListener('click', () => {
     burgerBlock.style.display = "none";
+    burgerBtn.style.display = "block";
 })
 
 burgerBtn.addEventListener('click', () => {
     burgerBlock.style.display = "block";
-    burgerBtn.style.marginBottom = "30px";
+    burgerBtn.style.display = "none";
+    burgerBlock.style.zIndex = "10003";
+
 } ) 
 
 

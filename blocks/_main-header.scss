@@ -81,19 +81,4 @@
         }
     }
 
-    &_burger-btn-block {
-        display: flex;
-    }
-
-    &_close-img {
-        width: 100%;
-    }
-
-    &_close-btn {
-        position: absolute;
-        right: 0;
-        background-color: var(--black);
-        border: none;
-    }
-
 }
