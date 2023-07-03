@@ -2,7 +2,7 @@
     background-color: var(--black);
     position: fixed;
     top: 0;
-    height: 2310px;
+    height: 100%;
     z-index: 3;
     overflow: hidden;
     transition: width .3s ease;
@@ -14,7 +14,7 @@
         width: 200px;
     }
 
-    &:hover + &_text{
+    &:hover+&_text {
         visibility: visible;
     }
 
@@ -24,6 +24,28 @@
 
     &_fire-img {
         margin-bottom: 30px;
+    }
+
+    &_burger-img {
+        z-index: 10001;
+        color: var(--white);
+    }
+
+    &_burger-btn {
+        background-color: var(--black);
+        border: none;
+        cursor: pointer;
+        visibility: hidden;
+    }
+
+    @media screen and (max-width: 420px) {
+        &_burger-btn {
+        visibility: visible;
+        }
+
+        &_ul {
+            display: none;
+        }
     }
 
     @media screen and (min-width: 500px) {
@@ -37,9 +59,12 @@
     }
 
     &_text {
-        font-size: 16px; 
+        font-size: 18px;
         color: var(--brand-color);
-        // visibility: hidden;
+    }
+
+    &_text:hover {
+        color: rgb(255, 81, 0);
     }
 
     &_img {

@@ -11,6 +11,7 @@ body {
         margin-bottom: 20px;
     }
 
+
     &_bonus-card-img {
         opacity: 60%;
     }
@@ -21,7 +22,6 @@ body {
 
     &_bonus-content {
         position: absolute;
-        justify-content: center;
         top: 36px;
         left: 36px;
     }
@@ -34,7 +34,7 @@ body {
         display: block;
         justify-content: center;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 36px;
         margin-top: 40px;
         margin-left: 37%;
@@ -67,4 +67,83 @@ body {
         line-height: 72px;
         color: var(--white);
     }
+
+    @media screen and (max-width: 1200px) {
+        &_bonus-cart {
+            display: block;
+            margin-left: 50%;
+            transform: translate(-50%); 
+            }
+
+        &_bonus-title {
+            text-align: center;
+            font-size: 28px;
+            line-height: 72px;
+        }
+
+        &_important-text {
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 48px;
+        }
+
+        &_join-btn {
+            padding: 10px 30px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 36px;
+        }
+
+        &_bonus-card-img1 {
+            margin-bottom: 30px;
+        }
+
+        &_thick-text {
+            size: 36px;
+            line-height: 72px;
+        }
+    } 
+
+    @media screen and (min-width: 1800px) {
+        &_bonus-card-img1 {
+            margin-right: 50px;
+        }
+    }
+
+    @media screen and (min-width: 1900px) {
+        &_bonus-card-img1 {
+            margin-right: 150px;
+        }
+    }
+
+    @media screen and (max-width: 1300px) {
+        &_important-text {
+            font-size: 16px;
+            text-align: center;
+            margin-left: 30px;
+        }
+
+        &_bonus-title {
+            font-weight: 400;
+            font-size: 20px;
+            text-align: center;
+            line-height: 48px;
+            margin-left: 50px
+        }
+
+        &_join-btn {
+            padding: 8px 24px;
+            font-size: 14px;
+            line-height: 28px;
+            margin-left: 39%;
+        }
+    }
+
+    @media screen and (max-width: 1230px) {
+        &_bonus-title {
+            margin-right: 20px;
+        }
+    }
 }
+
+;

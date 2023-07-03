@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Wingrade</title>
     <link rel="icon" type="image/x-icon" href="/images/nav-fire.svg">
 </head>
@@ -20,10 +22,10 @@
             <li class="main-header_list">
                 <form class="main-header_form">
                     <div class="main-header_input-block">
-                       <!-- <img class="main-header_search-icon" src="./images/search_icon.svg">  -->
-                        <input class="main-header_input" type="search" placeholder="Type name">
+                        <!-- <img class="main-header_search-icon" src="./images/search_icon.svg">  -->
+                        <input style="color: #C0C0C0;" class="main-header_input" type="search" placeholder="Type name">
                     </div>
-                    
+
                 </form>
 
                 <div class="main-header_block">
@@ -43,6 +45,10 @@
         </ul>
 
         <nav class="main-nav">
+            <button type="button" class="main-nav_burger-btn">
+                <img class="main-nav_burger-btn" src="./images/burger-bar (1) 1 (Traced).svg" alt="fire">
+            </button>
+
             <ul class="main-nav_ul">
                 <img class="main-nav_fire-img" src="./images/nav-fire.svg" alt="fire">
 
@@ -79,7 +85,8 @@
         <section class="main-section">
             <ul class="main-section_bonus-cart">
                 <li class="main-section_bonus-list">
-                    <img class="main-section_bonus-card-img" src="./images/main-section-bonus-card-img.svg" alt="">
+                    <img class="main-section_bonus-card-img main-section_bonus-card-img1"
+                        src="./images/main-section-bonus-card-img.svg" alt="">
 
                     <div class="main-section_bonus-content">
                         <h3 class="main-section_bonus-title">
@@ -145,11 +152,15 @@
                     <img class="main-categories_category-img" src="./images/gambling 2.svg" alt="">
                     <p class="main-categories_category-text">Slots</p>
                 </button>
+
+
+                <i class="fa-solid fa-angle-right" style="color: #ffffff; margin-top: 50px;"></i>
             </div>
 
             <div class="main-providers">
-                <button class="btn main-providers_provider main-providers_first-provider">
-                    <img class="main-providers_img" src="./images/provider-b.svg" alt="" class="main-providers_provider_img">
+                <button class="main-providers_provider btn main-providers_provider-helper">
+                    <img class="main-providers_img" src="./images/provider-ct.svg" alt=""
+                        class="main-providers_provider_img">
                 </button>
                 <button class="main-providers_provider btn main-providers_provider-helper">
                     <img class="main-providers_img" src="./images/provider-ct.svg" alt="" class="main-provider-img">
