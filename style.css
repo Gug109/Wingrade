@@ -70,6 +70,17 @@
   border: none;
 }
 @media screen and (max-width: 420px) {
+  .main-header_input {
+    display: none;
+  }
+  .main-header_language-btn {
+    display: none;
+  }
+  .main-header_btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 420px) {
   .main-header_opened-btn {
     display: block;
   }
@@ -280,14 +291,14 @@ body {
 }
 .main-nav_burger-list {
   background-color: #222424;
-  padding: 14px;
+  padding: 16px;
   border-radius: 16px;
   width: 90%;
   margin-left: 10px;
   padding-left: 4px;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 .main-nav_opened-btn {
   display: none;
