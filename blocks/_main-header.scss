@@ -69,14 +69,24 @@
         align-items: center;
     }
 
-}
-
-.opened-btn {
-    display: none;
-}
-
-@media screen and (max-width: 420px) {
-    .opened-btn {
-        display: block;
+    &_opened-btn {
+        display: none;
+        margin-bottom: 20px;
     }
+    
+    @media screen and (max-width: 420px) {
+        &_opened-btn {
+            display: block;
+        }
+    }
+
+    &_burger-btn-block {
+        display: flex; 
+    }
+
+    &_close-btn {
+        position: absolute;
+        right: 0; 
+    }
+
 }

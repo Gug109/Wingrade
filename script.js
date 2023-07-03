@@ -1,12 +1,17 @@
 let categoryButtons = document.querySelectorAll('.main-categories_category')
 let providerButtons = document.querySelectorAll('.main-providers_provider')
-let burgerBtn = document.querySelector(".opened-btn");
+let burgerBtn = document.querySelector(".main-header_opened-btn");
 let burgerBlock = document.querySelector(".main-nav_burger-ul");
+let closeBtn = document.querySelector(".main-header_close-btn");
+
+closeBtn.addEventListener('click', () => {
+    burgerBlock.style.display = "none";
+})
 
 burgerBtn.addEventListener('click', () => {
-    console.log("hello");
     burgerBlock.style.display = "block";
 } ) 
+
 
 function clearCategoryButtonStyles() {
     categoryButtons.forEach(button => {
