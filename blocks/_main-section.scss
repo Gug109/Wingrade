@@ -12,14 +12,23 @@ body {
         margin-bottom: 20px;
     }
 
+    &_bonus-card-mb {
+        display: none;
+    }
+
     @media screen and (max-width: 420px) {
         & {
             justify-content: center;
             margin-left: 8%;
+            margin-right: 8%;
          }
 
-        &_bonus-card-img2 {
+        &_bonus-card-img {
             display: none;
+        }
+        
+        &_bonus-card-mb {
+            display: block;
         }
 
         &_bonus-content {

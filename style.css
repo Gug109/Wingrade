@@ -216,13 +216,20 @@ body {
   margin-top: 30px;
   margin-bottom: 20px;
 }
+.main-section_bonus-card-mb {
+  display: none;
+}
 @media screen and (max-width: 420px) {
   .main-section {
     justify-content: center;
     margin-left: 8%;
+    margin-right: 8%;
   }
-  .main-section_bonus-card-img2 {
+  .main-section_bonus-card-img {
     display: none;
+  }
+  .main-section_bonus-card-mb {
+    display: block;
   }
   .main-section_bonus-content {
     display: none;
