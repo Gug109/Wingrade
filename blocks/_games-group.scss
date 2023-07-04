@@ -17,14 +17,14 @@
 
     @media screen and (max-width: 420px) {
         &_ul {
-            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
         }
     }
 
     @media screen and (max-width: 420px) {
         & {
             position: absolute;
-            left: 14%;
+            left: 11%;
             justify-content: center;
             top: 69%;
         }
