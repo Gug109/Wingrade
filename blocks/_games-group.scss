@@ -8,4 +8,20 @@
         gap: 20px;
     }
 
+    @media screen and (max-width: 420px) {
+        & {
+            position: absolute;
+            right: 80px;
+            justify-content: center;
+         }
+    }
+
+    @media screen and (max-width: 420px) {
+        & {
+            position: absolute;
+            left: 84px;
+            justify-content: center;
+            top: 540px;
+         }
+    }
 }

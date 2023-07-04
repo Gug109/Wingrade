@@ -6,6 +6,7 @@
         height: 100%;
         z-index: 3;
         overflow: hidden;
+        width: 38px;
         transition: width .3s ease;
         padding: 13px 20px;
         cursor: pointer;
@@ -78,7 +79,8 @@
 
     &_burger-ul {
         display: none;
-        height: 100%;
+        z-index: 20000;
+        padding-bottom: 90px;  
     }
 
     &_burger-list {

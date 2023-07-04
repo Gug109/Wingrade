@@ -13,8 +13,7 @@ body {
 
     @media screen and (max-width: 420px) {
         & {
-            position: absolute;
-           justify-content: center;
+            justify-content: center;
          }
     }
 
@@ -74,11 +73,15 @@ body {
         color: var(--white);
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1250px) {
         &_bonus-cart {
             display: block;
             margin-left: 50%;
             transform: translate(-50%);
+        }
+
+        &_categories-helper {
+            display: flex;
         }
 
         &_bonus-title {

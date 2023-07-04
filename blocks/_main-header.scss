@@ -18,8 +18,36 @@
         position: relative;
     }
 
+    @media screen and (max-width: 650px) {
+        &_input-btn {
+            display: block;
+            margin-left: 100px;
+        }
+
+        &_input {
+            display: none;
+        }
+    }
+
+    &_input-btn {
+        // display: none;
+        border: none;
+        border-radius: 50%;
+        background-color: #504c4c;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 850px) {
+        &_input {
+            width: 200px;
+            padding: 10px;
+        }
+    }
+
     &_block {
-        margin-left: 45%;
+        position: absolute;
+        right: 40px;
         align-items: center;
     }
 
@@ -32,6 +60,47 @@
         height: 2px;
         background-color: #504c4c;
         border: none;
+    }
+
+    &_language-block {
+        background-color: var(--black);
+        padding: 14px;
+        z-index: 30000;
+        position: absolute;
+        display: none;
+        right: 4px;
+        border-radius: 12px;
+        top: 50px;
+        align-items: center;
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    &_dropdown-arrow-btn {
+        background-color: var(--black);
+        border: none;
+        cursor: pointer;
+    }
+
+
+    &_opened-language-btn {
+        display: flex;
+        width: 120px;
+        border: none;
+        cursor: pointer;
+        align-items: center;
+        background-color: #504c4c;
+        padding: 6px;
+        border-radius: 8px;
+    }
+
+    &_language-text {
+        color: var(--white);
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    &_language-img {
+        width: 18px;
     }
 
     &_login-btn {
@@ -83,6 +152,7 @@
         margin-left: 6px;
         width: 45px;
         height: 30px;
+        display: none;
     }
 
     @media screen and (max-width: 420px) {
