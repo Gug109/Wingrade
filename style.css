@@ -162,7 +162,7 @@
   }
   .main-header_input-btn {
     display: block;
-    margin-left: 140px;
+    margin-left: 150px;
   }
   .main-header_dropdown-arrow-btn {
     display: none;
@@ -192,7 +192,7 @@
     position: absolute;
     left: 14%;
     justify-content: center;
-    top: 33%;
+    top: 46%;
   }
 }
 
@@ -548,7 +548,7 @@ body {
   .main-categories {
     padding: 20px;
     left: 20px;
-    top: 18%;
+    top: 26%;
     width: 220px;
   }
   .main-categories_category {
@@ -625,7 +625,7 @@ body {
     position: absolute;
     width: 250px;
     left: 20px;
-    top: 28%;
+    top: 40%;
   }
 }
 @media screen and (max-width: 1230px) {
