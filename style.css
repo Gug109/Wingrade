@@ -195,7 +195,7 @@
     position: absolute;
     left: 14%;
     justify-content: center;
-    top: 90%;
+    top: 60%;
   }
 }
 
@@ -552,7 +552,7 @@ body {
   .main-categories {
     padding: 20px;
     left: 8%;
-    top: 40%;
+    top: 35%;
     width: 220px;
   }
   .main-categories_category {
@@ -629,7 +629,7 @@ body {
     position: absolute;
     width: 250px;
     left: 8%;
-    top: 68%;
+    top: 63%;
   }
 }
 @media screen and (max-width: 1230px) {
