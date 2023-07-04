@@ -130,6 +130,7 @@
   display: none;
   background-color: var(--black);
   border: none;
+  margin-left: 2%;
 }
 .main-header_burger-btn-fire-img-block {
   display: flex;
@@ -629,7 +630,7 @@ body {
     position: absolute;
     width: 250px;
     left: 8%;
-    top: 63%;
+    top: 57%;
   }
 }
 @media screen and (max-width: 1230px) {
