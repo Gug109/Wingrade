@@ -567,20 +567,20 @@ body {
 }
 @media screen and (max-width: 420px) {
   .main-categories {
-    padding: 20px;
+    position: absolute;
     left: 8%;
     top: 37%;
     width: 220px;
   }
   .main-categories_category {
-    margin-left: 10px;
+    margin-left: 4px;
   }
 }
 @media (max-width: 768px) {
   .main-categories {
     flex-wrap: nowrap;
     justify-content: flex-start;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: y mandatory;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
     width: 74%;
@@ -645,8 +645,9 @@ body {
   .main-providers {
     position: absolute;
     width: 250px;
+    padding-left: 20px;
     left: 8%;
-    top: 60%;
+    top: 59%;
   }
 }
 @media screen and (max-width: 1230px) {
