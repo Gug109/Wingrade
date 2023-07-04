@@ -1,9 +1,10 @@
 body {
     background-color: var(--warm-black);
+    padding-right: 40px;
 }
 
 .main-section {
-    margin-left: 130px;
+    margin-left: 110px;
 
     &_bonus-cart {
         display: flex;
@@ -14,12 +15,22 @@ body {
     @media screen and (max-width: 420px) {
         & {
             justify-content: center;
+            margin-left: 8%;
          }
 
-        &_bonus-card-img {
-            max-width: 100%;
+        &_bonus-card-img2 {
+            display: none;
+        }
+
+        &_bonus-content {
+            display: none;
+        }
+
+        &_join-btn {
+            margin-bottom: 400px;
         }
     }
+
 
     &_bonus-card-img {
         opacity: 60%;
@@ -80,8 +91,8 @@ body {
     @media screen and (max-width: 1250px) {
         &_bonus-cart {
             display: block;
-            margin-left: 50%;
-            transform: translate(-50%);
+            // margin-left: 50%;
+            // transform: translate(-50%);
         }
 
         &_categories-helper {
@@ -90,7 +101,7 @@ body {
 
         &_bonus-title {
             text-align: center;
-            font-size: 28px;
+            font-size: 24px;
             line-height: 72px;
         }
 
@@ -105,6 +116,7 @@ body {
             font-weight: 500;
             font-size: 18px;
             line-height: 36px;
+            margin-bottom: 40px;
         }
 
         &_bonus-card-img1 {

@@ -2,11 +2,14 @@
     background-color: var(--black);
     padding-top: 8px;
     width: 100%;
+    height: 44px;
+    position: relative;
+    align-items: center;
     padding-bottom: 8px;
 
 
     &_input {
-        width: 360px;
+        width: 100%;
         height: 40px;
         left: 0;
         border-radius: 8px;
@@ -19,22 +22,17 @@
     }
 
     @media screen and (max-width: 650px) {
-        &_input-btn {
-            display: block;
-            margin-left: 100px;
-        }
-
         &_input {
             display: none;
         }
     }
 
     &_input-btn {
-        // display: none;
+        display: none;
         border: none;
+        padding: 16px;
         border-radius: 50%;
         background-color: #504c4c;
-        padding: 10px;
         cursor: pointer;
     }
 
@@ -47,7 +45,7 @@
 
     &_block {
         position: absolute;
-        right: 40px;
+        right: 0;
         align-items: center;
     }
 
@@ -138,6 +136,11 @@
         align-items: center;
     }
 
+    &_input-block {
+        top: 10%;
+        position: absolute;
+    }
+
     &_opened-btn {
         display: none;
         background-color: var(--black);
@@ -146,6 +149,7 @@
 
     &_burger-btn-fire-img-block {
         display: flex;
+        margin-top: 2%;
     }
 
     &_fire-img {
@@ -155,7 +159,18 @@
         display: none;
     }
 
+    &_fire-img-brand-logo {
+        margin-left: 6px;
+        width: 45px;
+        height: 30px;
+        display: none;
+    }
+
     @media screen and (max-width: 420px) {
+        &_fire-img-brand-logo {
+            display: block;
+        }
+
         &_input {
             display: none;
         }
@@ -164,12 +179,22 @@
             display: none;
         }
 
-        &_btn {
+        &_block {
+            margin-left: 30px;
+        }
+
+        &_input-btn {
+            display: block;
+            margin-left: 140px;
+        }
+        // &_btn {
+        //     display: none;
+        // }
+
+        &_dropdown-arrow-btn {
             display: none;
         }
-    }
 
-    @media screen and (max-width: 420px) {
         &_opened-btn {
             display: block;
         }

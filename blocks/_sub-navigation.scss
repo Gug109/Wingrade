@@ -79,8 +79,12 @@
 
     &_burger-ul {
         display: none;
-        z-index: 20000;
+        // z-index: 400000;
         padding-bottom: 90px;  
+        background-color: var(--black);
+        position: fixed;
+        width: 100%;
+        height: 100%;
     }
 
     &_burger-list {

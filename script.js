@@ -3,7 +3,7 @@ let providerButtons = document.querySelectorAll('.main-providers_provider')
 let burgerBtn = document.querySelector(".main-header_opened-btn");
 let burgerBlock = document.querySelector(".main-nav_burger-ul");
 let closeBtn = document.querySelector(".main-nav_close-btn");
-let fireImg = document.querySelector(".main-header_fire-img");
+let fireImg = document.querySelector(".main-header_fire-img-brand-logo");
 let dropdownBtn = document.querySelector(".main-header_dropdown-arrow-btn");
 let languageBlock = document.querySelector(".main-header_language-block");
 
