@@ -7,10 +7,17 @@
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
     }
-    @media  screen and (max-width: 680px)  {
+
+    @media screen and (max-width: 680px) {
         & {
             position: absolute;
             left: 220px;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        &_ul {
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
         }
     }
 
@@ -20,6 +27,6 @@
             left: 14%;
             justify-content: center;
             top: 69%;
-         }
+        }
     }
 }
