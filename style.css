@@ -172,7 +172,7 @@
 @media screen and (max-width: 420px) {
   .games-group {
     position: absolute;
-    left: 84px;
+    left: 86px;
     justify-content: center;
     top: 540px;
   }
@@ -193,6 +193,9 @@ body {
 @media screen and (max-width: 420px) {
   .main-section {
     justify-content: center;
+  }
+  .main-section_bonus-card-img {
+    max-width: 100%;
   }
 }
 .main-section_bonus-card-img {
