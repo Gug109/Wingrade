@@ -20,14 +20,13 @@
     <header class="main-header">
         <ul class="main-header_ul">
             <li class="main-header_list">
-                <form class="main-header_form">
+                <form id="form" name="myForm" class="main-header_form">
                     <div class="main-header_input-block">
                         <!-- <img class="main-header_search-icon" src="./images/search_icon.svg">  -->
-                        <input style="color: #C0C0C0;" class="main-header_input" type="search" placeholder="Type name">
+                        <input style="color: #C0C0C0;" name="myInput" class="main-header_input" type="search" placeholder="Type name">
                         <button class="main-header_input-btn"><i class="fa-solid fa-magnifying-glass"
                                 style="color: #ffffff; width: 100%;"></i> </button>
                     </div>
-
                 </form>
 
                 <div class="main-header_block">
@@ -38,12 +37,12 @@
                         Sign up
                     </button>
 
-                    <button class="main-header_language-btn btn">
-                        <img src="./images/header-language.svg" alt="language">
+                    <button class="main-header_language-btn btn" onclick="togglePopup()">
+                        <img class="main-header_language-btn-img" src="./images/header-language.svg" alt="language">
                     </button>
-                    <button class="main-header_dropdown-arrow-btn">
-                        <i class="fa-solid fa-angle-down" style="color: #ffffff; position: absolute; top: 10px;"></i>
-                    </button>
+
+                    <input id="input" name="openInput" class="main-header_opened-input" type="search" placeholder="Type name">
+                    <i class="fa-solid fa-xmark main-header_opened-input-icon" style="color: #ffffff;"></i>
 
                     <div class="main-header_language-block">
                         <button class="main-header_opened-language-btn">
@@ -155,7 +154,8 @@
                     <img src="./images/Group 1000003308.png" class="main-section_bonus-card-mb" alt="">
                 </li>
                 <li class="main-section_bonus-list">
-                    <img class="main-section_bonus-card-img main-section_bonus-card-img2" src="./images/main-section-bonus-card-img.svg" alt="">
+                    <img class="main-section_bonus-card-img main-section_bonus-card-img2"
+                        src="./images/main-section-bonus-card-img.svg" alt="">
 
                     <div class="main-section_bonus-content">
                         <h3 class="main-section_bonus-title">
@@ -173,7 +173,8 @@
             </ul>
 
             <div class="main-categories">
-                <button class="main-categories_category btn main-categories_category-helper main-categories_category-btn">
+                <button
+                    class="main-categories_category btn main-categories_category-helper main-categories_category-btn">
                     <img class="main-categories_category-img" src="images/categories-poker.svg" alt="">
                     <p class="main-categories_category-text">Slots</p>
                 </button>
@@ -236,7 +237,7 @@
                 <button class="main-providers_provider btn main-providers_provider-helper">
                     <img class="main-providers_img" src="./images/provider-ct.svg" alt="" class="main-provider-img">
                 </button>
-                <button class="main-providers_provider btn">
+                <button class="main-providers_provider btn main-providers_provider-helper">
                     <img class="main-providers_img" src="./images/provider-ct.svg" alt="" class="main-provider-img">
                 </button>
             </div>

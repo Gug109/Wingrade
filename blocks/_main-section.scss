@@ -5,8 +5,9 @@ body {
 
 .main-section {
     margin-left: 110px;
+    max-width: 100%;
     margin-top: 6%;
-    
+
 
     &_bonus-cart {
         display: flex;
@@ -23,15 +24,17 @@ body {
             justify-content: center;
             margin-left: 8%;
             margin-right: 8%;
-         }
+        }
 
         &_bonus-card-img {
             display: none;
         }
-        
+
         &_bonus-card-mb {
             display: block;
-            margin-top: 22%;
+            margin-top: 14%;
+            position: absolute;
+            right: 14%;
         }
 
         &_bonus-content {
@@ -100,15 +103,17 @@ body {
         color: var(--white);
     }
 
+    @media screen and (max-width: 680px) {
+        &_bonus-card-img1 {
+            margin-top: 10%;
+        }
+    }
+
     @media screen and (max-width: 1250px) {
         &_bonus-cart {
             display: block;
-            // margin-left: 50%;
-            // transform: translate(-50%);
-        }
-
-        &_categories-helper {
-            display: flex;
+            position: relative;
+            left: 14%;
         }
 
         &_bonus-title {

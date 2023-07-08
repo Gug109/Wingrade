@@ -9,9 +9,12 @@
     }
 
     @media screen and (max-width: 680px) {
+        &_ul {
+            grid-template-columns: repeat(auto-fit, minmax(100px, 5fr));
+        }
+
         & {
             position: absolute;
-            left: 220px;
         }
     }
 
@@ -24,8 +27,8 @@
     @media screen and (max-width: 420px) {
         & {
             position: absolute;
-            left: 11%;
-            justify-content: center;
+            left: 12%;
+            justify-content: space-between;
             top: 69%;
         }
     }
